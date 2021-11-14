@@ -1,0 +1,27 @@
+{
+  "name": "kristalteam",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/lib/Manager.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kristal4673/kristalTeam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kristal4673/kristalTeam/issues"
+  },
+  "homepage": "https://github.com/Kristal4673/kristalTeam#readme"
+}
