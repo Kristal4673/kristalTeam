@@ -1,5 +1,16 @@
 var inquirer = require("inquirer");
 const fs = require("fs");
+class managers extends Employee {
+
+  constructor(position) {
+   this.position = position 
+  }
+  getRole() {
+    console.log(this.position); 
+  } else {
+  return manager; 
+  }
+  //add validation to ensure that user input is in the proper format. 
 inquirer
   .prompt([
     /* Passing questions for command-line prompt here in object */
@@ -26,3 +37,7 @@ inquirer
       // Something else went wrong
     }
   });
+
+
+
+module.exports = Manager; 

@@ -1,3 +1,33 @@
+
+const inquirer = require("inquirer");
+const 
+
+class Employee {
+  // Save a reference for `this` in `this` as `this` will change inside of inquirer
+  constructor(person) {
+    this.person = Employee; 
+  }
+  // Setting methods up for class employee
+getName() {
+  console.log("getting name of emp"); 
+  }
+  getID() {
+   
+    console.log(geting ID of this employee); 
+  
+ }
+  getEmail() {
+    console.log("getting email of Emp"); 
+
+}
+  getRole() {
+    console.log("Getting the roles of Emp ")
+
+  }
+  else {
+  return Employee;
+}
+}
 var inquirer = require("inquirer");
 const fs = require("fs");
 inquirer
@@ -35,9 +65,12 @@ inquirer
   .catch((error) => {
     if (error.isTtyError) {
       // Prompt couldn't be rendered in the current environment
-      console.log(ERROR)
+      console.log(Error)
     } else {
       // Something else went wrong                                `
       console.log(Err)
     }
   });
+
+
+module.exports = Employee; 
