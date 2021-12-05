@@ -80,7 +80,7 @@ The first class is an `Employee` parent class with the following properties and 
 
 * `id`
 
-* `email`
+* `email`l
 
 * `getName()`
 

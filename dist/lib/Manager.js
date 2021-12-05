@@ -1,4 +1,5 @@
 var inquirer = require("inquirer");
+const fs = require("fs");
 inquirer
   .prompt([
     /* Passing questions for command-line prompt here in object */

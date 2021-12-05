@@ -1,4 +1,5 @@
 var inquirer = require("inquirer");
+const fs = require("fs");
 inquirer
   .prompt([
     {
@@ -13,7 +14,7 @@ inquirer
     },
     {
       name: "id",
-      message: "What would you like to do?",
+      message: "What is Members ID Number?",
       type: "input",
     },
     {
@@ -28,12 +29,15 @@ inquirer
     },
   ])
   .then((answers) => {
-    // Use user feedback for... whatever!!
+    console.log(answers); 
+  
   })
   .catch((error) => {
     if (error.isTtyError) {
       // Prompt couldn't be rendered in the current environment
+      console.log(ERROR)
     } else {
-      // Something else went wrong
+      // Something else went wrong                                `
+      console.log(Err)
     }
   });
