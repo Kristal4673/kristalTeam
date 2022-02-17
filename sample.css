@@ -1,0 +1,16 @@
+.ctn{
+    border: 1px solid black;
+    background-color: palegoldenrod;
+    padding: 20px;
+    margin: 3rem; 
+    
+}
+
+.ctn p{
+
+}
+
+.title{
+    padding: 40px;
+    background-color: cyan;
+}
