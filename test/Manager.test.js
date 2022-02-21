@@ -14,6 +14,6 @@ describe("Engineer tests", () => {
         expect(newManager.getEmail()).toEqual("doug@doug.com");
     });
     test("Get Name Methods", () => {
-        expect(newManager.getRole()).toEqual("Manger");
+        expect(newManager.getRole()).toEqual("Manager");
     });
 });
