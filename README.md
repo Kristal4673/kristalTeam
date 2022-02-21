@@ -44,6 +44,6 @@ Youtube: https://youtu.be/HTaodW44n6o
 Github: https://github.com/Kristal4673/kristalTeam.git
 
 ## Screenshot 
-![IMG](IMG/Screen Shot 2022-02-17 at 11.24.27 AM.png)
+![IMG](IMG/KristalTeam.PNG)
 
 

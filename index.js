@@ -4,9 +4,9 @@ const Intern = require("./lib/Intern");
 const Engineer = require("./lib/Engineer");
 const inquirer = require("inquirer");
 const fs = require("fs");
-const makeCard = require('./src/helper.js')
+const makeCard = require("./src/helper.js");
 
-const employeeArray = [];//It starts with an array
+const employeeArray = []; //It starts with an array
 
 async function start() {
   //await return means wait for this function to actually fetch data before going to the next function
@@ -88,25 +88,38 @@ async function engineerPrompt() {
         name: "username",
         message: "What is your Github username?",
       },
+
+      {
+        type: "input",
+        name: "name",
+        message: "What is Engineers name?",
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "What the Engineers ID?",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What Engineers Email?",
+      },
       {
         type: "Duplicate",
         name: "roles",
-        choices: ["Manager", "Engineer", "Employee"],
+        message: "What role are you , Manager, Engineer, Employee?"
       },
     ])
-    // .then((data) => {
-    //   console.log(username);
 
-    //   fs.writeFile(filename, JSON.stringify(data, null, "\t"), (err) =>
-    //     err ? console.log(err) : console.log("Success!")
-    //   );
-    // });
     .then((answers) => {
       employeeArray.push(`
         <div class="ctn">
           <h1>ENGINEER</h1>
           <p>Username : ${answers.username}</p>
           <p>Roles : ${answers.roles}</p>
+           <p>ID : ${answers.id}</p>
+          <p> Name : ${answers.name}</p>
+            <p>Email : ${answers.email}</p>
         </div>
       `);
       addEmployee();
@@ -114,19 +127,6 @@ async function engineerPrompt() {
     });
 }
 
-// function createTeam() {
-//   inquirer.prompt([
-//     {
-//       type: "list",
-//       name: "role",
-//       choices: ["Intern", "Engineer", "Am Done!"]
-//     },
-//   ]).then(data => {
-//     if (data.role === "Engineer") {
-
-//     }
-//   })
-// }
 
 async function employeePrompt() {
   return await inquirer
@@ -179,17 +179,36 @@ async function internPrompt() {
         type: "input",
       },
       {
+        type: "input",
+        name: "name",
+        message: "What is your manager's name?",
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "What is your manager's ID?",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What is your manager's Email?",
+      },
+      {
         name: "roles",
         message: "roles",
         type: "input",
       },
     ])
     .then((answers) => {
-        employeeArray.push(`
+      employeeArray.push(`
         <div class="ctn">
           <h1>INTERN</h1>
           <p>School : ${answers.School}</p>
           <p> Role : ${answers.roles}</p>
+           <p>ID : ${answers.id}</p>
+          <p> Name : ${answers.name}</p>
+            <p>Email : ${answers.email}</p>
+        
         </div>
       `);
       // Use user feedback for... whatever!!
@@ -205,7 +224,7 @@ async function internPrompt() {
 }
 const htmlCreate = () => {
   console.log(employeeArray);
-  employeeArray.join()
+  employeeArray.join();
 
   // console.log('cards', cards)
 
