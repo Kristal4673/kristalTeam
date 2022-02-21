@@ -181,21 +181,21 @@ async function internPrompt() {
       {
         type: "input",
         name: "name",
-        message: "What is your manager's name?",
+        message: "What is your Interns name?",
       },
       {
         type: "input",
         name: "id",
-        message: "What is your manager's ID?",
+        message: "What is your Interns ID?",
       },
       {
         type: "input",
         name: "email",
-        message: "What is your manager's Email?",
+        message: "What is your Interns Email?",
       },
       {
         name: "roles",
-        message: "roles",
+        message: "What roles are they Manager, Intern, Employee, Engineer?",
         type: "input",
       },
     ])

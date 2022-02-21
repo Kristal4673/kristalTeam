@@ -15,7 +15,7 @@ SO THAT I have quick access to their emails and GitHub profiles
 
 ## Usage
 
-Npm run start on terminal and then in-line 
+Npm run start on terminal and then for the test. NPM run test. 
 
 ## Acceptance Criteria
 
